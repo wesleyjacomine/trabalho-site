@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(imagens/simbolo2.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: red;
+            text-shadow: 4px 4px black;
+        }
+
+        .formulario {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            border: 3px solid red;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 18px;
+            background-color: red;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            border: 3px solid red;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+    <script>
+        function tocarSom() {
+            var audio = new Audio('Fatality.mp3');
+            audio.play();
+
+            document.getElementById("mkForm").reset();
+        }
+    </script>
+
+    <h1>⛩️ALGUMA IDEIA? ENTRE EM KONTATO CONOSCO!⛩️</h1>
+    <div class="formulario">
+        <form id="mkForm" onsubmit="tocarSom(); return false;">
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite seu nome" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Digite seu email" required>
+
+            <label>Ideia:</label>
+            <textarea rows="5" placeholder="Digite sua ideia" required></textarea>
+
+            <button type="submit">Fatality💀</button>
+        </form>
+    </div>
+</body>
+
+</html>

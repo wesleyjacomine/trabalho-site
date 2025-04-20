@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortal Kombat</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: black;
+      background-image: url(imagens/mk.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .rainbow {
+      top: 60px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      animation: brilhoRGB 1s infinite;
+
+    }
+
+    .inicial {
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #FFA07A;
+      text-transform: uppercase;
+      text-align: center;
+      animation: brilho 1.5s infinite alternate;
+      text-shadow:
+        -2px -2px 0 red,
+        2px -2px 0 red,
+        -2px 2px 0 red,
+        2px 2px 0 red;
+    }
+
+
+    .img-esquerda {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+    }
+
+    .img-direita {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+    }
+
+
+    .menu-topo ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .menu-topo ul li {
+      margin: 0 15px;
+    }
+
+    .menu-topo ul li a {
+      font-family: sans-serif;
+      text-decoration: none;
+      color: #FA8072;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu-topo ul li a:hover {
+      color: red;
+    }
+
+    @keyframes brilhoRGB {
+      0% {
+        color: orange;
+      }
+
+      66% {
+        color: red;
+      }
+
+      99% {
+        color: yellow;
+      }
+    }
+
+    .gif-esquerdo {
+      float: left;
+      width: 200px;
+    }
+
+    .gif-direito {
+      float: right;
+      width: 200px;
+    }
+  </style>
+  <h5 class="rainbow">🎉Site criado por: Wesley Jacomine - 5165969🎉</h5>
+  <h1 class="inicial">🏆Bem vindo lutador!🏆</h1>
+  <img src="imagens/uniube.png" alt="Logo" class="img-esquerda">
+  <img src="imagens/uniube.png" alt="Logo" class="img-direita">
+  <nav class="menu-topo">
+    <ul>
+      <li><a href="comunidade.htm">👥Komunidade</a></li>
+      <li><a href="contato.htm">📞Kontato</a></li>
+      <li><a href="fotos.htm">📷Fotos</a></li>
+      <li><a href="franquia.htm">🏯Franquia</a></li>
+      <li><a href="guia.htm">📜Guia</a></li>
+      <li><a href="historia.htm">🗺️História</a></li>
+      <li><a href="links.htm">🔗Links</a></li>
+      <li><a href="modos.htm">🕹️Modos</a></li>
+      <li><a href="personagens.htm">👾Personagens</a></li>
+      <li><a href="noticias.htm">📰Portal de Notícias</a></li>
+    </ul>
+  </nav>
+  <img class="gif-esquerdo" src="imagens/simbolo.gif">
+  <img class="gif-direito" src="imagens/simbolo.gif">
+</body>
+
+</html>
